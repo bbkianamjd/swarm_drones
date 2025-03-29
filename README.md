@@ -49,14 +49,12 @@ string timestamp
  ./install_run.sh  # Installs the Docker
  
  ./run.sh # Runs the docker
- # Note: server_ip is hard-coded
- # Port is hard-coded
+ Note: server_ip is hard-coded
+ Port is hard-coded
  
 ### Inside the docker
 #### Run both nodes in parallel
-./ros_ws/install/setup.bash
-   //note: ros2 run drone_swarm gateway_client &
-   //note: ros2 run drone_swarm position_planner &
+./ros_ws/install/setup.bash # ros2 run drone_swarm gateway_client &  ros2 run drone_swarm
    
 #### Testing
 ros2 topic echo /swarm_position

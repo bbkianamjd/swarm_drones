@@ -1,0 +1,95 @@
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+*.egg
+.eggs/
+.env
+.venv/
+env/
+venv/
+
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+target/
+build/
+
+# === C / C++ ===
+*.o
+*.out
+*.obj
+*.exe
+*.so
+*.dll
+*.dylib
+cmake-build-*/
+
+# === ROS (Robot Operating System) ===
+build/
+devel/
+install/
+
+# === VSCode ===
+.vscode/
+
+# === IntelliJ IDEA / Android Studio ===
+.idea/
+*.iws
+*.iml
+*.ipr
+.gradle/
+local.properties
+
+# === macOS ===
+.AppleDouble
+.LSOverride
+Icon?
+ehthumbs.db
+Desktop.ini
+
+# === General backup and temp files ===
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.orig
+
+# === Git ===
+*.orig
+*.rej
+*.patch
+
+# === Test / Coverage ===
+.coverage
+coverage.xml
+*.cover
+*.gcno
+*.gcda
+
+# === SSH ===
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
+
