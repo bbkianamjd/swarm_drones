@@ -46,7 +46,8 @@ string timestamp
 # Quickstart (Dev)
  
 ## Client Side
- ./install_run.sh  # Installs the Docker
+ cd client
+ ./install.sh  # Installs the Docker
  
  ./run.sh # Runs the docker
  Note: server_ip is hard-coded
@@ -56,11 +57,14 @@ string timestamp
 #### Run both nodes in parallel
 ./ros_ws/install/setup.bash # ros2 run drone_swarm gateway_client &  ros2 run drone_swarm
    
-#### Testing
-ros2 topic echo /swarm_position
-
 ## Server Side
 ### Start the server (Outside the docker)
-python3 server.py
+ cd server
+ python3 server.py
 
+## Testing
+ ros2 topic echo /swarm_position
+ Notes:
+ - Port is hard-coded 2020. Ensure your network forwards this port
+ - ip address is hard-coded in run.sh
 
